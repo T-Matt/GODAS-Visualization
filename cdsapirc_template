@@ -1,0 +1,11 @@
+# CDS API Configuration Template
+#
+# Copy this file to ~/.cdsapirc and fill in your credentials
+# Get your API key from: https://cds.climate.copernicus.eu/api-how-to
+#
+url: https://cds.climate.copernicus.eu/api/v2
+key: YOUR_API_KEY_HERE
+
+# Example configuration:
+# url: https://cds.climate.copernicus.eu/api/v2
+# key: 12345:abcdef12-3456-78ab-cdef-123456789abc
