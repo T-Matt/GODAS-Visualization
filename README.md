@@ -44,6 +44,11 @@ output_file = extractor.extract_data(
    python examples.py
    ```
 
+4. Or use the command-line interface:
+   ```bash
+   python extract_cli.py era5 2m_temperature -lon 0.1278 -lat 51.5074 -start 2023-01-01 -end 2023-01-03
+   ```
+
 ## Repository Structure
 
 ```
@@ -55,6 +60,8 @@ output_file = extractor.extract_data(
 │   └── utils.py            # Utility functions and validation
 ├── CombineNC.ipynb         # Jupyter notebook for NetCDF data handling
 ├── examples.py             # Usage examples for CDS extractor
+├── extract_cli.py          # Command-line interface for data extraction
+├── cdsapirc_template       # Template for CDS API credentials
 ├── requirements.txt        # Python dependencies
 ├── CDS_EXTRACTOR_README.md # Detailed CDS extractor documentation
 └── README.md               # This file

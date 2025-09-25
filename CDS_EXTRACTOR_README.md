@@ -257,12 +257,30 @@ Output files are automatically named using this pattern:
 
 Example: `era5_2m_temperature_2023-01-01_to_2023-01-03_0.1278lon_51.5074lat.nc`
 
-## Command Line Usage
+## Command Line Interface
 
+### Examples Script
 Run the examples script to test functionality:
 
 ```bash
 python examples.py
+```
+
+### CLI Tool
+Use the command-line interface for quick data extraction:
+
+```bash
+# Extract temperature for a single point
+python extract_cli.py era5 2m_temperature -lon 0.1278 -lat 51.5074 -start 2023-01-01 -end 2023-01-03
+
+# Extract multiple variables for a region
+python extract_cli.py era5 2m_temperature,mean_sea_level_pressure -lon -10,30 -lat 35,60 -start 2023-07-01 -end 2023-07-02
+
+# Extract pressure level data
+python extract_cli.py era5-pressure u_component_of_wind,v_component_of_wind -lon -5,10 -lat 40,55 -start 2023-06-15 -end 2023-06-15 -levels 850,500,250
+
+# Show help and all options
+python extract_cli.py --help
 ```
 
 ## Requirements
