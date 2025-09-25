@@ -1,0 +1,15 @@
+# Core dependencies for CDS API data extraction
+cdsapi>=0.5.1
+netcdf4>=1.6.0
+xarray>=2023.1.0
+numpy>=1.24.0
+pandas>=1.5.0
+
+# Optional dependencies for additional formats and features
+h5py>=3.8.0
+cfgrib>=0.9.10
+matplotlib>=3.6.0
+requests>=2.28.0
+
+# Development and testing
+pytest>=7.0.0
